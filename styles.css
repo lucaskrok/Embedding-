@@ -1,0 +1,74 @@
+/* Add this to your existing CSS file or create a new one and link it in your HTML */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7; /* Light gray background */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 1rem;
+}
+
+.visualization {
+  margin-top: 2rem;
+}
+
+.viz-controls {
+  margin-bottom: 1rem;
+}
+
+.viz-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff; /* White background */
+  margin: 0 auto; /* Center the visualization */
+  max-width: 800px; /* Limit the maximum width of the visualization */
+}
+
+.viz-controls {
+  text-align: center; /* Center-align the buttons container */
+}
+
+button {
+  display: inline-block; /* Display buttons on one line */
+  margin: 10px; /* Add margin for spacing */
+  background: linear-gradient(
+    to right,
+    #4caf50,
+    #009688
+  ); /* Gradient from green to teal */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 200px; /* Set a fixed width for consistent button sizes */
+}
+
+button:hover {
+  background: linear-gradient(
+    to right,
+    #45a049,
+    #00796b
+  ); /* Darker gradient on hover */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}

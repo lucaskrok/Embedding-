@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      type="module"
+      src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"
+    ></script>
+    <script src="./app.js" defer></script>
+    <title>Data Visualization Demo</title>
+  </head>
+  <body>
+    <header>
+      <h1>Data Visualization Demo</h1>
+    </header>
+    <main>
+      <section class="visualization">
+        <h2>Interactive Visualization</h2>
+        <div class="viz-controls">
+          <fieldset>
+            <legend>Filter Options</legend>
+            <button id="oregon_and_washington">
+              Oregon and Washington Only
+            </button>
+            <button id="clear_filter">Clear Filter</button>
+            <button id="undo">Undo</button>
+          </fieldset>
+        </div>
+        <div class="viz-container">
+          <tableau-viz
+            id="OurViz"
+            src="https://public.tableau.com/views/Superstore_embedded_800x800/Overview"
+            toolbar="bottom"
+            height="800px"
+            width="100%"
+          >
+          </tableau-viz>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
